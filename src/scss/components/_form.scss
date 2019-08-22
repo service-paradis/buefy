@@ -217,3 +217,9 @@ $floating-in-height: 3.25em;
         }
     }
 }
+
+.input {
+    &[size] {
+        width: auto
+    }
+}

@@ -9,6 +9,7 @@
             :autocomplete="newAutocomplete"
             :maxlength="maxlength"
             :value="computedValue"
+            :size="nativeSize"
             v-bind="$attrs"
             @input="onInput"
             @blur="onBlur"
@@ -21,6 +22,7 @@
             :class="[inputClasses, customClass]"
             :maxlength="maxlength"
             :value="computedValue"
+            :size="nativeSize"
             v-bind="$attrs"
             @input="onInput"
             @blur="onBlur"
@@ -79,7 +81,8 @@ export default {
         customClass: {
             type: String,
             default: ''
-        }
+        },
+        nativeSize: [String, Number]
     },
     data() {
         return {

@@ -23,6 +23,13 @@ export default [
                 default: '—'
             },
             {
+                name: '<code>native-size</code>',
+                description: 'Same as native <code>size</code>',
+                type: 'Number, String',
+                values: '—',
+                default: '—'
+            },
+            {
                 name: '<code>expanded</code>',
                 description: 'Makes input full width when inside a grouped or addon field',
                 type: 'Boolean',
